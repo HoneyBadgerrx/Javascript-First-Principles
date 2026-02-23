@@ -227,3 +227,29 @@
 // console.log("Wasted time until", Date.now() - start);
 // → Wasted time until 50
 // → Timeout ran at 55
+
+// Testing this of functions and anonymous functions
+// let obj = {
+//     name: 'kabir',
+//     func: function(){
+//         return function(){
+//             console.log(this.name)
+//         }
+//     }
+// }
+// let obj2 = {
+//     name: 'kabir',
+//     func: function(){
+//         return ()=>{
+//             console.log(this.name)
+//         }
+//     }
+// }
+
+// let f1 = obj.func();
+// let f2 = obj2.func();
+
+// f1();
+// f1.call({name: 'impostor'});
+// f2();
+// f2.call({name: 'impostor'});
